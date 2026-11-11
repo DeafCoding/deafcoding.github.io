@@ -172,3 +172,8 @@ document.querySelectorAll(".quick-cmds button").forEach(function(btn) {
     carajinput.dispatchEvent(new KeyboardEvent("keydown", { key: "Enter" }));
   });
 });
+
+// Tap anywhere on the terminal to focus the input (opens the keyboard on phones)
+document.querySelector(".terminal").addEventListener("click", function() {
+  carajinput.focus();
+});
