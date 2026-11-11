@@ -275,3 +275,31 @@ h1{
   border-color: var(--amber);
   color: var(--amber);
 }
+
+/* Mobile fix: keep the input row inside the terminal */
+.term-input-row > span {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.input-wrap,
+#termInput {
+  min-width: 0;
+}
+#termInput {
+  width: 100%;
+}
+.term-body {
+  overflow-x: hidden;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 480px) {
+  .term-body,
+  .term-input-row,
+  #termInput,
+  .mirror {
+    font-size: 12px;
+  }
+  .term-title {
+    font-size: 12px;
+  }
+}
