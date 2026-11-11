@@ -5,41 +5,42 @@ const cursor = document.querySelector(".cursor");
 carajinput.focus();
 const commands = {
   whoami: [
-    "Juan Gomez — Software Developer",
-    "Based in Rochester, NY",
-    "LinkedIn: linkedin.com/in/juan-g0mez · GitHub: github.com/JuanGomezBot"
+    "Juan Gomez · M.S. Cybersecurity student @ NYU Tandon",
+    "Based in Brooklyn, NY · From Bogotá, Colombia",
+    "Focus: purple team, application security, detection engineering",
+    "Looking for: Summer 2027 security internships"
   ],
   skills: [
-    "Languages: Python, Java, C#, Bash, HTML5, CSS3, PHP, JavaScript/jQuery",
-    "Tools: Git, VS Code, Tkinter, Java Swing, SSMS, Discord API, Docker, Azure",
-    "Other: accessibility-first UI design, QA & testing, security best practices"
+    "Languages: Python, Java, C#, PHP, SQL, JavaScript, Bash",
+    "Security: YARA, AFL++ fuzzing, AddressSanitizer, Clang static analysis",
+    "Tools & Platforms: Git, Linux/WSL, SQLite, React, Supabase, Docker (basic), Azure (basic), Cloudflare Tunnel"
   ],
   projects: [
-    "Smart Antivirus (CLI, Python) — heuristic/signature-based scanning engine with modular design, tuned to minimize false positives",
-    "Ashmod (Discord Bot) — moderation, ticketing, leveling, and economy features handling 1,000+ weekly interactions",
-    "Beehive Monitor — Arduino + Raspberry Pi system tracking temperature and CO2 levels, with a live dashboard and SMS alerts (school project)",
-    "Evamailer — Tkinter tool for automated email campaigns, processing 300+ emails per run with CSV and attachment support"
+    "antivirus-v2 (Python CLI) · YARA signature scanning with input validation; rebuilding with folder scans, multiple rule sets and tests · github.com/DeafCoding/antivirus-v2",
+    "Software Security Audit: tinybrowse (C, NYU course project) · fuzzed with AFL++, triaged crashes with AddressSanitizer and Clang static analysis, applied hardening fixes",
+    "Beehive Monitor (Senior Capstone) · Arduino + Raspberry Pi hive sensors, React/Supabase dashboard, SMS alerts via an Android gateway behind Cloudflare Tunnel",
+    "Ashmod (Discord bot, Python) · cog-based moderation, ticketing, leveling and economy with SQLite, handling 1,000+ weekly interactions"
   ],
   experience: [
-    "Tutor, Rochester Institute of Technology (Oct 2024 - Present) — mentoring 10-15 students weekly, running programming workshops each semester",
-    "Web/Software Developer Intern, NTID Technology and Information Services (Jan - Jul 2025) — built front-end features with a PHP/SQL backend, automated Python reports cutting manual workload by 40%",
-    "Web/Software Developer Intern, Proyección Laboral, Bogotá (Dec 2023 - Feb 2024) — built 4+ client websites, developed Evamailer, saved clients 15 hours/week"
+    "Web/Software Developer Intern, NTID Technology and Information Services, Rochester, NY (Jan - Jul 2025) · front-end features on a PHP/SQL backend; automated Python reporting, cutting manual workload 40%",
+    "Web/Software Developer Intern, Proyección Laboral S.A.S., Bogotá (Dec 2023 - Feb 2024) · built 4+ client websites; developed Evamailer, processing 300+ emails per campaign and saving 15 hours/week",
+    "Peer Tutor, Rochester Institute of Technology (Oct 2024 - May 2026) · mentored 10-15 students weekly; ran 3+ workshops per semester"
   ],
   education: [
-    "M.S. in Cybersecurity, NYU Tandon School of Engineering — starting Fall 2026",
-    "B.S. Computing and Information Technology, RIT — expected May 2026",
-    "A.A. Applied Computer Technology, RIT — May 2024"
+    "M.S. Cybersecurity, NYU Tandon School of Engineering · expected May 2028",
+    "B.S. Computing and Information Technologies, RIT · May 2026",
+    "A.A. Applied Computer Technology, RIT · May 2024"
   ],
   leadership: [
-    "Club President, RIT NTID Offensive & Defensive Research (Jan 2024 - Present) — led 25+ students per semester across workshops and hands-on labs, coordinated 5+ events"
+    "President, NTID Offensive & Defensive Research Club, RIT (Jan 2024 - May 2026) · led 25+ students per semester in security workshops, research and hands-on labs; coordinated 5+ events"
   ],
   contact: [
-    "Email: jag7850@rit.edu",
+    "Email: jag10405@nyu.edu",
     "LinkedIn: linkedin.com/in/juan-g0mez",
-    "GitHub: github.com/JuanGomezBot"
+    "GitHub: github.com/DeafCoding"
   ],
   help: [
-    "Available commands: whoami, skills, projects, experience, education, leadership, contact"
+    "Available commands: whoami, skills, projects, experience, education, leadership, contact, clear"
   ],
   clear: ["Clears the terminal"],
   "sudo dame-tinto": [
@@ -61,7 +62,7 @@ const commands = {
   "#################",
   "here's your virtual tinto, parcero"
 ],
-"cat origin.txt":["Bogotá, Colombia -> Rochester, NY",
+"cat origin.txt":["Bogotá, Colombia -> Rochester, NY -> Brooklyn, NY",
    "nostalgia compiles, but never throws an error"]
 };
 function actualizarCursor() {

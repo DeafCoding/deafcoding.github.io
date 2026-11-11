@@ -231,3 +231,47 @@ h1{
   cursor: pointer;
   width: fit-content;
 }
+.tagline {
+  color: var(--amber);
+  font-size: 14px;
+  margin: -8px 0 6px;
+}
+.links {
+  font-size: 13px;
+  margin: 0;
+}
+.links a,
+.card h3 a {
+  color: var(--blue);
+  text-decoration: none;
+}
+.links a:hover,
+.card h3 a:hover {
+  text-decoration: underline;
+}
+.sep {
+  color: var(--border);
+  margin: 0 4px;
+}
+.quick-cmds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.quick-cmds button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.quick-cmds button:hover,
+.quick-cmds button:focus-visible {
+  border-color: var(--amber);
+  color: var(--amber);
+}
