@@ -164,3 +164,11 @@ async function unlockItinerary() {
   }
   termBody.scrollTop = termBody.scrollHeight;
 }
+
+// Quick command buttons: type the command into the terminal and run it
+document.querySelectorAll(".quick-cmds button").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    carajinput.value = btn.dataset.cmd;
+    carajinput.dispatchEvent(new KeyboardEvent("keydown", { key: "Enter" }));
+  });
+});
