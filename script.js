@@ -16,7 +16,8 @@ const commands = {
     "Tools & Platforms: Git, Linux/WSL, SQLite, React, Supabase, Docker (basic), Azure (basic), Cloudflare Tunnel"
   ],
   projects: [
-    "antivirus-v2 (Python CLI) · YARA signature scanning with input validation; rebuilding with folder scans, multiple rule sets and tests · github.com/DeafCoding/antivirus-v2",
+    "antivirus-v2 (Python CLI) · signature-based malware scanner with YARA: folder scanning, multiple rule sets, pytest tests · github.com/DeafCoding/antivirus-v2",
+    "Timbre (Flask) · QR-based silent doorbell for Deaf people with urgent push notifications; threat-modeled and self-attacked: fixed an info leak, added rate limiting · github.com/DeafCoding/timbre",
     "Software Security Audit: tinybrowse (C, NYU course project) · fuzzed with AFL++, triaged crashes with AddressSanitizer and Clang static analysis, applied hardening fixes",
     "Beehive Monitor (Senior Capstone) · Arduino + Raspberry Pi hive sensors, React/Supabase dashboard, SMS alerts via an Android gateway behind Cloudflare Tunnel",
     "Ashmod (Discord bot, Python) · cog-based moderation, ticketing, leveling and economy with SQLite, handling 1,000+ weekly interactions"
